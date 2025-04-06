@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Swag window manager
+Comment=Swag window manager
+Exec=/usr/local/bin/swagwm
+Type=XSession

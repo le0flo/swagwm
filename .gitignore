@@ -1,0 +1,8 @@
+*/config.h
+*/*.orig
+*/*.o
+*/components/*.o
+*/dmenu
+*/dwm
+*/slstatus
+*/stest
