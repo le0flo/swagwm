@@ -3,14 +3,19 @@
 ### Dependencies
 
 ```sh
-sudo pacman -S base-devel xorg-server xorg-xinit xorg-xinput libinput libx11 libxinerama libxft alacritty feh dex nitrogen picom
+# Build dependencies
+sudo pacman -S base-devel xorg-server xorg-xinit xorg-xinput libinput libx11 libxinerama libxft
 
-yay -S apple-fonts
+# Additional software
+sudo pacman -S alacritty dex nitrogen picom
+
+# Fonts
+yay -S apple-fonts ttf-inconsolata-nerd
 ```
 
 ### Installation
 
 ```sh
 cd swagwm
-sudo ./install.sh
+./install.sh
 ```

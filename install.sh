@@ -1,16 +1,20 @@
 #!/bin/sh
 
 cd ./dwm
-make clean install
+sudo make clean install
 
 cd ../dmenu
-make clean install
+sudo make clean install
 
 cd ../slstatus
-make clean install
+sudo make clean install
 
 cd ..
 
-cp -f swagwm /usr/local/bin
-chmod 755 /usr/local/bin/swagwm
-cp -f swagwm.desktop /usr/share/xsessions
+sudo cp -f swagwm /usr/local/bin
+sudo chmod 755 /usr/local/bin/swagwm
+sudo cp -f swagwm.desktop /usr/share/xsessions
+
+mkdir -p $HOME/.config/{alacritty,picom}
+cp -f alacritty/alacritty.toml $HOME/.config/alacritty
+cp -f picom/picom.conf $HOME/.config/picom
