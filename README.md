@@ -1,21 +1,15 @@
 # Swag window manager
 
-### Dependencies
+### Requirements
 
-```sh
-# Build dependencies
-sudo pacman -S base-devel xorg-server xorg-xinit xorg-xinput libinput libx11 libxinerama libxft
+- Base dependencies: `sudo pacman -S base-devel xorg-server xorg-xinit xorg-xinput libinput libx11 libxinerama libxft`
+- Needed programs: `sudo pacman -S alacritty dex nitrogen picom`
+- Fonts: `paru -S apple-fonts ttf-inconsolata-nerd`
 
-# Additional software
-sudo pacman -S alacritty dex nitrogen picom
-
-# Fonts
-yay -S apple-fonts ttf-inconsolata-nerd
-```
+> [!NOTE]
+> You'll need to find the equivalent packages for other distributions.
 
 ### Installation
 
-```sh
-cd swagwm
-./install.sh
-```
+1. Run `./install.sh`
+
